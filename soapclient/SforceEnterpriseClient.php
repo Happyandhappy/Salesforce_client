@@ -149,5 +149,35 @@ class SforceEnterpriseClient extends SforceBaseClient {
     $arg->request = new SoapVar($mergeRequest, SOAP_ENC_OBJECT, 'MergeRequest', $this->namespace);
     return parent::_merge($arg);
   }
+
+  /**
+   * @param string $fieldList
+   * @param string $sObjectType
+   * @param array $ids
+   * @return string
+   */
+  public function retrieve($fieldList, $sObjectType, $ids) {
+    return $this->_retrieveResult(parent::retrieve($fieldList, $sObjectType, $ids));
+  }  
+
+  /**
+   *
+   * @param mixed $response
+   * @return array
+   */
+  private function _retrieveResult($response) {
+    $arr = array();
+    if(is_array($response)) {
+      foreach($response as $r) {
+        $sobject = new SObject($r);
+        array_push($arr,$sobject);
+      };
+    }else {
+      $sobject = new SObject($response);
+        array_push($arr, $sobject);
+    }
+    return $arr;
+  }
+  
 }
 ?>

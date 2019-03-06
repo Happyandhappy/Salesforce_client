@@ -1868,6 +1868,7 @@ All Rights Reserved
                         <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Title" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Website" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Anzahl_Versuche__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -3011,6 +3012,7 @@ All Rights Reserved
                         <element name="WhatId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="Who" nillable="true" minOccurs="0" type="ens:Name"/>
                         <element name="WhoId" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="Recording_URL__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         </sequence>
                     </extension>
                 </complexContent>
