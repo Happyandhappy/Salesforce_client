@@ -19,14 +19,6 @@
     if (isset($_GET['consoleview'])) $consoleview = $_GET['consoleview'];
     unset($_GET['consoleview']);
 
-
-    // show array fields
-    function _debug($arr){
-        echo "<pre>";
-        print_r($arr);
-        echo "</pre>";
-    }
-
     /* get format phone number string */
     function getPhoneText($numbers){
         return "(" . substr($numbers,0,3) . ") " . substr($numbers, 3,3) . "-" . substr($numbers, 6);
@@ -119,8 +111,9 @@
         else $parse_array[$key] = $value;
     }
 
-
-    // _debug($parse_array);
+    // echo "<pre>";
+    // print_r($parse_array);
+    // echo "</pre>";
     // exit();
 
     if (!isset($parse_array['U']) || !isset($parse_array['P']) || !isset($parse_array['Token'])){
@@ -146,10 +139,12 @@
         $types = getTypes($parse_array, $meta);
         $parse_array = adjustData($parse_array, $types);
 
-        // _debug($parse_array);
+        // echo "<pre>";
+        // print_r($parse_array);
+        // echo "</pre>";
         // exit;
 
-        if (isset($parse_array['SearchType']) && isset($parse_array['SearchValue']) && $parse_array['SearchValue'] != ''){
+        if (isset($parse_array['SearchType']) && isset($parse_array['SearchValue'])){
             foreach ($meta as $row) {
                 if ($row->name == $parse_array['SearchType']) $type = $row->type;
             }
@@ -194,7 +189,7 @@
         }        
 
         foreach ($parse_array as $key => $value) {
-            if (strpos($key, 'call_') !== false or $value ==='' or strpos($key, 'event_') !== false) continue;
+            if (strpos($key, 'call_') !== false or $value ==='') continue;
             $LeadObj[$key] = $value;
         }
 
@@ -212,7 +207,9 @@
             }
         }
 
-        _debug($LeadObj);
+        echo "<pre>";
+        print_r($LeadObj);
+        echo "</pre>";
 
         /* Update Lead */
         if ($is_update){
@@ -252,7 +249,10 @@
             }
         }
 
-        _debug($sObject);
+        echo "<pre>";
+        print_r($sObject);
+        echo "</pre>";
+
         
         if ($is_task){
             echo "*** Creating the Completed Task:\r\n";
@@ -263,48 +263,14 @@
             }            
 
             $createResponse = $mySforceConnection->create(array($sObject), 'Task');
-            _debug($createResponse);
+            echo "<pre>";
+            print_r($createResponse);
             if ($debug) logger(json_encode($createResponse));
         }else{
             echo "Completed Task was not created because there is not fields";
             if ($debug) logger("Completed Task was not created because there is not fields");
         }
         echo "<br>";
-
-
-
-        /*
-        *  ADD EVENT WITH   event_ prefix
-        *  
-        */
-        $is_event = false;
-        $eObject = array(
-             "WhoId" => substr($lead_id, 0, strlen($lead_id)-3),
-        );
-        foreach ($parse_array as $key => $value) {
-            if (strpos($key, 'event_') !== false) {
-                $eObject[str_replace('event_', '', $key)] = $value;
-                $is_event = true;
-            }
-        }
-
-        if ($is_event){
-            echo "*** Creating an Event:\r\n";
-
-            if ($debug){
-                logger("Event Object Fields: ");
-                logger("*** Creating an event...");
-                logger(json_encode($eObject));
-            }
-
-            $eObject['ReminderDateTime'] = gmdate("Y-m-d\TH:i:s\Z", strtotime('-15 minute', strtotime($eObject['StartDateTime'])));
-
-            _debug($eObject);
-
-            $createResponse = $mySforceConnection->create(array($eObject), 'Event');
-            _debug($createResponse);
-        }
-
     }catch (Exception $e) {
         echo $mySforceConnection->getLastRequest();
         echo $e->faultstring;

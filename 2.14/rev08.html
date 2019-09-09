@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.chasedatacorp.com/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link id="main-sheet" rel="stylesheet" href="http://www.chasedatacorp.com/assets/css/bootstrap.min.css">
+</head>
+
+<body class="" id="">
+    <div class="col-sm-12" id="content">
+        <div class="col-sm-7 leftSide">
+            <div class="body">
+                <div class="container">
+                    <div class="nav-body">
+                        <!-- start section 1 -->
+                        <div class="col-sm-12 navdiv">
+                            <!--<br>-->
+                            <div class="col-sm-9 adjust ">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-12 nopadding ">
+                                        <span class="bold ">(#FirstName#) (#LastName#) (#Preferred Name#)</span>
+                                        <br>
+                                        <input type="text" class="company" readonly="true" value="(#Carrier Product 2#)" name="Carrier Product 2" field-name="Carrier Product 2">
+                                        <input type="text" class="plan" readonly="true" value="(#Plan#)" name="Plan" field-name="Plan">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 nopadding " id="">
+                                    <div class="col-sm-3 nopadding c-3 ">
+                                        <strong id="">Lead ID:</strong>
+                                    </div>
+                                    <div class="col-sm-9 nopadding c-9 ">
+                                        <input class="control-input form-control clientId" size="4" type="text" control="input" field-name="ClientId" id="clientId">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 nopadding ">
+                                    <div class="col-sm-3 nopadding c-3 ">
+                                        <strong>Phone:</strong>
+                                    </div>
+                                    <div class="col-sm-9 nopadding PrimaryPhone c-9 " id="">
+                                        <span id="PrimaryPhone" name="PrimaryPhone">(#PrimaryPhone#)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form control="form" class="dynamic-form" id="form">
+                            <input type="hidden" name="page" id="page" value="(#page#)">
+                            <input type="hidden" control="input " name="scroll1" id="scroll1" value="(#scroll1#)">
+                            <input type="hidden" control="input " name="scroll2" id="scroll2" value="(#scroll2#)">
+
+                            <input type="hidden" name="axisy" id="axisy" value="(#axisy#)">
+                            <input name="disposition" id="Disposition" type="hidden" value="">
+                            <input type="hidden" control="input " field-name="email_selected" name="email_selected" value="(#email_selected#)">
+                            <input type="hidden" control="input " id="Gender" value="(#Gender#)">
+                            <input type="hidden" control="input " id="AccountType" value="(#Account Type#)">
+                            <input type="hidden" control="input " id="CarrierProduct2" value="(#Carrier Product 2#)">
+                            <input type="hidden" control="input " id="Plan" value="(#Plan#)">
+                            <input type="hidden" control="input " id="AppStatus" value="(#App Status#)">
+                            <input type="hidden" control="input " id="SoldAgent" value="(#Sold Agent#)">
+                            <input type="hidden" control="input " id="DentalPlan" value="(#Dental Plan#)">
+                            <input type="hidden" control="input " id="DentalCoverage" value="(#Dental Coverage#)">
+                            <input type="hidden" control="input " id="VisionCoverage" value="(#Vision Coverage#)">
+
+                            <input type="hidden" control="input " name="SoldAgentList" id="SoldAgentList" value="Dee West,Samantha Hughes,Alexes Hayes,Allison Burden,Amanda Tompkins,Bernadette Boughton,Bill Adkins,Brian Livesay,Cheryl McVaney,Chilaka Ukaegbu,Corey Adkins,D-Nylle Smith,Ivan Dazil,Jeff Gifford,Juliet Roberts,Kenyetta Montgomery,Lynn Sperry,Mark Ross,Mason Jackson,Maurice Martin,Michelle Carroll,Shynara Williams,Tom Drori,Annette Sanders,James Cummings,Joe Williams,Jorden Lee,Kenneth Merrriman,Lorna Martin,Mauricio Quinones,Michelle Rose-Lai,Stella Dimgba,Tanekia Pope,Tiffani Vasquez,Torian Jackson">
+
+                            <button class="button hidden submit" id="submit">SAVE</button>
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step02_rev08" value="NEXT" class="button next hidden step2">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step03_rev08" value="step3" class="button hidden step3">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step04_rev08" value="step4" class="button hidden step4">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step05_rev08" value="step5" class="button hidden step5">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step06_rev08" value="step6" class="button hidden step6">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step07_rev08" value="step7" class="button hidden step7">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step08_rev08" value="step8" class="button hidden step8">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step09_rev08" value="step9" class="button hidden step9">
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="Step10_rev08" value="step10" class="button hidden step10">
+
+                            <input type="submit" control="submit" action="submit_and_navigate" navigate-to="ASR Script_rev4" value="ASR Script_rev4" class="button next hidden ASR_script_v4">
+
+                            <div class="col-sm-12 ">
+                                <div class="col-sm-12 title " id="">
+                                    <h4 class="bottombar top0 ">Contact Information</h4>
+                                </div>
+                                <!--First Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6 nopadding">
+                                        <div class="col-sm-7 nopaddingleft">
+                                            <label><strong>Email</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Email" name="Email" value="(#Email#)">
+                                        </div>
+                                        <div class="col-sm-5 nopadding">
+                                            <label>App Status</label>
+                                            <select field-name="App Status" class="form-control" name="App Status">
+                                                <!--<option value="" selected="" disabled="">Select One</option>-->
+                                                <option value="(#App Status#)" selected="" hidden="">(#App Status#)</option>
+                                                <option value="Approved">Approved</option>
+                                                <option value="Declined">Declined</option>
+                                                <option value="Pending">Pending</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Carrier Policy Number</label>
+                                        <input type="text" control="input " class="form-control" field-name="Carrier Policy Number" name="Carrier Policy Number" value="(#Carrier Policy Number#)">
+                                    </div>
+                                </div>
+                                <!--Second Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Sold Agent</strong>
+                                        </label>
+                                        <select name="Sold Agent" value="(#Sold Agent#)" class="form-control">
+                                            <!--<option value="" selected="" disabled="">Select One</option>-->
+                                            <option value="(#Sold Agent#)" selected="" hidden="">(#Sold Agent#)</option>
+                                        </select>
+                                        <!-- <input type="text" control="input " class="form-control" field-name="Sold Agent" name="Sold Agent" value="(#Sold Agent#)"> -->
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Desired Coverage</strong>
+                                        </label>
+                                        <input type="text" control="input " field-name="Desired Coverage" class="form-control" name="Desired Coverage" value="(#Desired Coverage#)">
+                                    </div>
+                                </div>
+                                <!--Third Row-->
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Health Conditions</label>
+                                    <textarea field-name="Notes" name="Notes">(#Notes#)</textarea>
+                                </div>
+                                <!--Fourth Row-->
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Medications</label>
+                                    <textarea field-name="Medications" name="Medications">(#Medications#)</textarea>
+                                </div>
+                                <!--Fifth Row-->
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Agent Notes</label>
+                                    <textarea field-name="AuxNotes" name="AuxNotes">(#AuxNotes#)</textarea>
+                                </div>
+                                <!--Sixth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-4 nopaddingright">
+                                        <label>First Name</label>
+                                        <input type="text" control="input " class="form-control" field-name="FirstName" name="FirstName" value="(#FirstName#)">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Middle Initial</label>
+                                        <input type="text" control="input " class="form-control" field-name="Middle Initial" name="Middle Initial" value="(#Middle Initial#)">
+                                    </div>
+                                    <div class="col-sm-4 nopaddingleft">
+                                        <label>Last Name</label>
+                                        <input type="text" control="input " class="form-control" field-name="LastName" name="LastName" value="(#LastName#)">
+                                    </div>
+                                </div>
+                                <!--Seventh Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Address</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Address" name="Address" value="(#Address#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Address 2</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Address 2" name="Address 2" value="(#Address 2#)">
+                                    </div>
+                                </div>
+
+                                <!--Eighth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-4 nopaddingright">
+                                        <label><strong>City</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="City" name="City" value="(#City#)">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Zip Code</label>
+                                        <input type="text" control="input " class="form-control" field-name="ZipCode" name="ZipCode" value="(#ZipCode#)">
+                                    </div>
+                                    <div class="col-sm-4 nopaddingleft">
+                                        <label><strong>State</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="State" name="State" value="(#State#)">
+                                    </div>
+                                </div>
+
+                                <!--Ninth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Primary Phone</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="PrimaryPhone" name="PrimaryPhone" value="(#PrimaryPhone#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Closer Agent</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Closer Agent" name="Closer Agent" value="(#Closer Agent#)">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Alt Phone 1</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Alt Phone 1" name="Alt Phone 1" value="(#Alt Phone 1#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Alt Phone 2</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Alt Phone 2" name="Alt Phone 2" value="(#Alt Phone 2#)">
+                                    </div>
+                                </div>
+
+                                <!--Tenth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-2 nopaddingright">
+                                        <label><strong>Age</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Age" name="Age" value="(#Age#)">
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <label><strong>Date of Birth</strong>
+                                        </label>
+                                        <!--<input type="text" control="input " class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">-->
+                                        <input type="date" class="form-control" field-name="Date of Birth" name="Date of Birth" value="(#Date of Birth#)">
+                                    </div>
+                                    <div class="col-sm-5 nopaddingleft">
+                                        <label><strong>State or Country of Birth</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="State or Country of Birth" name="State or Country of Birth" value="(#State or Country of Birth#)">
+                                    </div>
+                                </div>
+
+                                <!--Tenth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Tobacco Use</strong>
+                                        </label>
+                                        <!--<select name="Tobacco Use" value="(#Tobacco Use#)" class="form-control">-->
+                                        <!--    <option value="Yes">Yes</option>-->
+                                        <!--    <option value="No">No</option>-->
+                                        <!--</select>-->
+                                        <input type="text" control="input " class="form-control" field-name="Tobacco Use" name="Tobacco Use" value="(#Tobacco Use#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-6 ZipCode">
+                                            <label><strong>Height</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Height" name="Height" value="(#Height#)">
+                                        </div>
+                                        <div class="col-sm-6 St">
+                                            <label><strong>Weight</strong>
+                                            </label>
+                                            <input type="text" control="input " class="form-control" field-name="Weight" name="Weight" value="(#Weight#)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Eleventh Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label>Gender</label>
+                                        <select field-name="Gender" class="form-control" name="Gender">
+                                            <!--<option value="" selected="" disabled="">Select One</option>-->
+                                            <option value="(#Gender#)" selected="" hidden="">(#Gender#)</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Account Type</label>
+                                        <select field-name="Account Type" class="form-control" name="Account Type">
+                                            <!--<option value="" selected="" disabled="">Select One</option>-->
+                                            <option value="(#Account Type#)" selected="" hidden="">(#Account Type#)</option>
+                                            <option value="Checking">Checking</option>
+                                            <option value="Saving">Saving</option>
+                                            <!---<option value="Direct Express">Direct Express</option>-->
+                                            <!---<option value="Credit Debit">Credit Debit</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!--Twelfth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label>Carrier</label>
+                                        <select field-name="Carrier Product 2" class="form-control" name="Carrier Product 2" id="carrier">
+                                            <!--<option value="" selected="" disabled="">Select One</option>-->
+                                            <option value="(#Carrier Product 2#)" selected="" hidden="">(#Carrier Product 2#)</option>
+                                            <option value="Royal Neighbors of America">Royal Neighbors of America</option>
+                                            <option value="Baltimore Life">Baltimore Life</option>
+                                            <option value="Liberty Bankers Life">Liberty Bankers Life</option>
+                                            <option value="American General">American General</option>
+                                            <option value="Great Western">Great Western</option>
+                                            <!--<option value="Foresters">Foresters</option>-->
+                                            <!--<option value="Prosperity">Prosperity</option>-->
+                                            <!--<option value="5Star Life">5Star Life</option>-->
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Plan</label>
+                                        <select field-name="Plan" name="Plan" class="form-control">
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--Thirteenth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Face Amount</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Face Amount" name="Face Amount" value="(#Face Amount#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Premium</strong>
+                                        </label>
+                                        <input type="number" control="input " step=".01" class="form-control" field-name="Premium" name="Premium" value="(#Premium#)" autocomplete="off">
+                                    </div>
+                                </div>
+                                <!--Fourteenth Row-->
+                                <div class="col-sm-12 nopaddingright">
+                                    <div class="col-sm-12 nopaddingleft">
+                                        <label><strong>Beneficiary</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Beneficiary" name="Beneficiary" value="(#Beneficiary#)">
+                                    </div>
+                                </div>
+                                <!--Fifteenth Row-->
+                                <div class="col-sm-12 nopaddingright">
+                                    <div class="col-sm-12 nopaddingleft">
+                                        <label><strong>Contingent Beneficiary</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Contingent Beneficiary" name="Contingent Beneficiary" value="(#Contingent Beneficiary#)">
+                                    </div>
+                                </div>
+
+                                <!--Sixth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Draft Date</strong>
+                                        </label>
+                                        <!--<input type="text" control="input " class="form-control" field-name="Draft Date" name="Draft Date" value="(#Draft Date#)">-->
+                                        <input type="date" field-name="Draft Date" class="form-control" name="Draft Date" value="(#Draft Date#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Future Draft Date</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Future Draft Date" name="Future Draft Date" value="(#Future Draft Date#)">
+                                        <!--<input type="date" field-name="Future Draft Date" class="form-control" name="Future Draft Date" value="(#Future Draft Date#)">-->
+                                    </div>
+                                </div>
+                                <!--Seventeenth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label>Social Security Number</label>
+                                        <input type="text" control="input " class="form-control" field-name="Social Security Number" name="Social Security Number" value="(#Social Security Number#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Drivers License</label>
+                                        <input type="text" control="input " class="form-control" field-name="Drivers License" name="Drivers License" value="(#Drivers License#)">
+                                    </div>
+                                </div>
+                                <!--Eighteenth Row-->
+                                <div class="col-sm-12 nopaddingright">
+                                    <div class="col-sm-12 nopaddingleft">
+                                        <label><strong>Name On Account</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Name On Checking or DX" name="Name On Checking or DX" value="(#Name On Checking or DX#)">
+                                    </div>
+                                </div>
+                                <!--Nineteenth Row-->
+                                <div class="col-sm-12 nopaddingright">
+                                    <div class="col-sm-12 nopaddingleft">
+                                        <label><strong>Bank Name</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Bank Name" name="Bank Name" value="(#Bank Name#)">
+                                    </div>
+                                </div>
+                                <!--Twentieth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-5">
+                                        <label><strong>Routing Number</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Routing Number" name="Routing Number" value="(#Routing Number#)">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <label><strong>Account Number</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Account Number" name="Account Number" value="(#Account Number#)">
+                                    </div>
+                                </div>
+                                <!--Twenty-first Row-->
+                                <!---<div class="col-sm-12 col12">-->
+                                <!---<div class="col-sm-6">-->
+                                <!---<label><strong>Expiration Date</strong>-->
+                                <!---</label>-->
+                                <!---<input type="date" field-name="Exp. Date" class="form-control" name="Exp. Date" value="(#Exp. Date#)">-->
+                                <!--</div>-->
+                                <!---<div class="col-sm-6">-->
+                                <!---<label><strong>CCV Code</strong>-->
+                                <!---</label>-->
+                                <!---<input type="text" control="input " class="form-control" field-name="CCV Code" name="CCV Code" value="(#CCV Code#)">-->
+                                <!---</div>-->
+                                <!---</div>-->
+                                <!--Twenty-second Row-->
+                                <div class="col-sm-12 nopaddingright">
+                                    <div class="col-sm-12 nopaddingleft">
+                                        <label>Primary Care Physician</label>
+                                        <input type="text" control="input " class="form-control" field-name="Primary Care Physician" name="Primary Care Physician" value="(#Primary Care Physician#)">
+                                    </div>
+                                </div>
+                                <!--Twenty-Third Row-->
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Current Insurance Info</label>
+                                    <!--<input type="text" control="input " class="form-control" field-name="Current Insurance Info" name="Current Insurance Info" value="(#Current Insurance Info#)">-->
+                                    <textarea name="Current Insurance Info" field-name="Current Insurance Info">(#Current Insurance Info#)</textarea>
+                                </div>
+                                <!--Twenty-Fourth Row-->
+                                <div class="col-sm-12" style="padding-left: 10px;">
+                                    <label>Child/G-Child</label>
+                                    <!--<input type="text" control="input " class="form-control" field-name="Child/G-Child" name="Child/G-Child" value="(#Child/G-Child#)">-->
+                                    <textarea field-name="Child/G-Child" name="Child/G-Child">(#Child/G-Child#)</textarea>
+                                </div>
+                                <!--Twenty Fifth Row-->
+                                <div class="col-sm-12" style="padding-left:10px;">
+                                    <label>Occupation Name of Disability</label>
+                                    <!--<input type="text" control="input " class="form-control" field-name="Occupation Name of Disability" name="Occupation Name of Disability" value="(#Occupation Name of Disability#)">-->
+                                    <textarea field-name="Occupation Name of Disability" name="Occupation Name of Disability">(#Occupation Name of Disability#)</textarea>
+                                </div>
+                                <!--Twenty-Sixth Row-->
+                                <div class="col-sm-12" style="padding-left:10px;">
+                                    <label>Quote</label>
+                                    <!--<input type="text" control="input " class="form-control" field-name="Quote" name="Quote" value="(#Quote#)">-->
+                                    <textarea field-name="Quote" name="Quote">(#Quote#)</textarea>
+                                </div>
+
+                                <!--Twenty-Seventh Row-->
+
+                                <!--Twenty-Eighth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label>Dental Plan</label>
+                                        <select name="Dental Plan" field-name="Dental Plan" class="form-control">
+                                            <option value="(#Dental Plan#)" selected="" hidden="">(#Dental Plan#)</option>
+                                            <option value="None">None</option>
+                                            <option value="1500">1500</option>
+                                            <option value="3000">3000</option>
+                                            <option value="5000">5000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Dental Coverage</label>
+                                        <select name="Dental Coverage" field-name="Dental Coverage" class="form-control">
+                                            <option value="(#Dental Coverage#)" selected="" hidden="">(#Dental Coverage#)</option>
+                                            <option value="None">None</option>
+                                            <option value="Member">Member</option>
+                                            <option value="Member &amp; Spouse">Member &amp; Spouse</option>
+                                            <option value="Member &amp; Children">Member &amp; Children</option>
+                                            <option value="Family">Family</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--Twenty-Ninth Row-->
+                                <div class="col-sm-12">
+                                    <div class="col-sm-6">
+                                        <label>Vision Coverage</label>
+                                        <select name="Vision Coverage" field-name="Vision Coverage" class="form-control">
+                                            <option value="(#Vision Coverage#)" selected="" hidden="">(#Vision Coverage#)</option>
+                                            <option value="None">None</option>
+                                            <option value="Member">Member</option>
+                                            <option value="Member &amp; Spouse">Member &amp; Spouse</option>
+                                            <option value="Member &amp; Children">Member &amp; Children</option>
+                                            <option value="Family">Family</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Enrollment Rep</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Enrollment Rep" name="Enrollment Rep" value="(#Enrollment Rep#)">
+                                    </div>
+                                </div>
+
+                                <!--Thirtieth Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Hobby Color</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Hobbycolor" name="Hobbycolor" value="(#Hobbycolor#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Preferred Name</strong>
+                                        </label>
+                                        <input type="text" control="input " field-name="Preferred Name" class="form-control" name="Preferred Name" value="(#Preferred Name#)">
+                                    </div>
+                                </div>
+                                <!--Thirty-First Row-->
+                                <div class="col-sm-12 col12">
+                                    <div class="col-sm-6">
+                                        <label><strong>Burial/Cremation</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Burial/Cremation" name="Burial/Cremation" value="(#Burial/Cremation#)">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Budget</strong>
+                                        </label>
+                                        <input type="text" control="input " class="form-control" field-name="Budget" name="Budget" value="(#Budget#)">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end section 2 -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 rightSide">
+            <div class="sidenav">
+                <div class="progress_div">
+                    <ul class="progressbar" id="progressbar">
+                        <li id="step1" class="active" style="width: 8%">Greetings &amp; Discounts</li>
+                        <li id="step2" style="width: 9%">Basic Information</li>
+                        <li id="step3" style="width: 10%">Coverage &amp; Needs</li>
+                        <li id="step4" style="width: 11%">Disability &amp; Health Interview</li>
+                        <li id="step5" style="width: 12%">Features, Budget &amp; Recap</li>
+                        <li id="step6" style="width: 12%">Choices &amp; Close</li>
+                        <li id="step7" style="width: 11%">Information &amp; Banking</li>
+                        <li id="step8" style="width: 10%">Prep For Call</li>
+                        <li id="step9" style="width: 9%">Enrollment Call</li>
+                        <li id="step10" style="width: 8%">Virtual Hug</li>
+                    </ul>
+                </div>
+                <div class="bar_top"></div>
+                <div class="col-sm-12 rightbody">
+                    <div id="greeting">
+                        <h4>GREETING - LEAD SOURCE - (#LeadSource#)</h4>
+                        <p></p>
+                        <p style="padding:0;">
+                            <span style="color:#ff0000;font-weight:700">Facebook:</span>
+                            <span>Hi, is this (#FirstName#)? Hi (#FirstName#), my name is </span>
+                            <span style="font-weight:700">(#Rep#). </span>
+                            <span>How are you doing today? Good! You recently requested information on Facebook regarding the state regulated senior programs available to you in (#State#) for burial coverage. You set up a security question with us, you said your favorite </span>
+                            <span style="font-weight:700">hobby/color</span>
+                            <span style="font-weight:400;text-decoration:none;vertical-align:baseline;font-style:normal">was (#Hobbycolor#) so you would know it was the right people calling you back, is that correct? Ok, good. So, I'm the one that's been assigned your file and will be working with you. It's a pleasure to speak with you today. Is this coverage for yourself or someone else? Ok perfect now let me gather some basic information to get started.</span>
+                        </p>
+                        <p></p>
+
+                        <p style="padding:10px 0;">
+                            <span style="color:#ff0000;font-weight:700">CC4:</span>
+                            <span>Hi, is this (#FirstName#)? Hi (#FirstName#), my name is </span>
+                            <span style="font-weight:700">(#Rep#). </span>
+                            <span>How are you doing today? Good! You recently spoke with one of my associates regarding the state regulated senior programs available to you in (#State#) for burial coverage. During that initial phone call you set up a security question with us, you said your favorite </span>
+                            <span style="font-weight:700">hobby/color</span>
+                            <span style="font-weight:400;text-decoration:none;vertical-align:baseline;font-style:normal">was (#Hobbycolor#) so you would know it was the right people calling you back, is that correct? Ok, good. So, I'm the one you are supposed to be working with and it's a pleasure to speak with you today. Is this coverage for yourself or someone else? Ok perfect now let me gather some basic information to get started.</span>
+                        </p>
+                        <p></p>
+                        <p></p>
+                        <p style="padding:10px 30px;">
+                            <span><strong>For them or Loved one:</strong>
+                                    <input type="text" control="input " field-name="Desired Coverage" name="Desired Coverage" value="(#Desired Coverage#)">
+                                </span>
+                        </p>
+                        <p style="padding:0;">
+                            <span style="color:#ff0000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:italic;">
+                                <strong>NOTE:</strong>The favorite hobby question is a great opportunity to connect and start the bonding process - Make a friend make a sale! Be prepared to overcome early objection
+                                </span>
+                        </p>
+                        <p style="padding:10px 30px 0px 30px;">
+                            <span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>*** Preferred Name:</strong> <input type="text" control="input " field-name="Preferred Name" name="Preferred Name" value="(#Preferred Name#)"> 
+                                </span>
+                        </p>
+                        <p style="padding:0px 30px 0px 30px;">
+                            <span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Client Name: </strong>
+                                    <input type="text" control="input " field-name="FirstName" name="FirstName" value="(#FirstName#)"> 
+                                    <input type="text" control="input " field-name="LastName" name="LastName" value="(#LastName#)"> 
+                                </span>
+                        </p>
+                        <p style="padding:0px 30px 0px 30px;">
+                            <span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hobby/Color:</strong>
+                                    <input type="text" control="input " field-name="Hobbycolor" name="Hobbycolor" value="(#Hobbycolor#)">
+                                </span>
+                        </p>
+                        <p style="padding:0px 30px 0px 30px;">
+                            <span>
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <strong>Resident State:</strong> 
+                                <input type="text" control="input " field-name="State" name="State" value="(#State#)">
+                            </span>
+                        </p>
+                        <p style="padding:0px 30px 0px 30px;">
+                        </p>
+                        <p style="padding:0px 30px 0px 30px;">
+                            <span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <strong>Gender of Insured:</strong>
+                                <select field-name="Gender" name="Gender">
+                                    <!--<option value="" selected="" disabled="">Select One</option>-->
+                                    <option value="(#Gender#)" selected="" hidden="">(#Gender#)</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </span>
+                        </p>
+                        <p style="padding-top:5px;">
+                            <span>
+                                <strong>Notes:</strong> <br>
+                                <textarea field-name="Notes " name="Notes">(#Notes#)</textarea>
+                            </span>
+                        </p>
+                        <p style="padding:0">
+                            <span>
+                                Now (#Preferred Name#), one of the most common needs my customers have is to make sure that when their time comes, they’re not leaving a big financial burden for their loved ones, is that how you feel? Okay, well that is exactly what we do. I help people just like you, every day, take this burden off of their family and ensure that their final wishes are met. 
+                            </span>
+                        </p>
+                        <p style="padding:0;margin:0;color:#000000;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">            
+                            </span>
+                        </p>
+                        <p style="padding:0;">
+                            <span>Now, before we get started, I want you to know who you are on the phone with. My name is 
+                                </span>
+                            <span style="font-weight:700">(#Rep#),</span>
+                            <span>and I am a</span>
+                            <span style="font-style:italic">Senior Benefits Advocate</span>.
+                            <span> I work here in our final expense department. I am also the licensed field underwriter who is going to determine which one of the state regulated programs you qualify for, and I’m going to help you put that coverage in place </span>
+                            <span style="font-weight:700">today</span>.
+                            <span style="font-weight:400;text-decoration:none;vertical-align:baseline;font-style:normal">This is an EASY three step process, and as your advocate I will be with you through every step!</span>
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="discount">
+                        <h4>DISCOUNT QUESTIONS</h4>
+                        <p>
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">Alright (#Preferred Name#), now first things first, I need to ask you a couple of quick questions to see if you qualify for any of the discounts that you may be entitled to:</span>
+                        </p>
+                        <p style="padding:0;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal"></span>
+                        </p>
+                        <p>
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Have you used electronic cigarettes, tobacco or any other nicotine products in the past 12 months?</span>
+                        </p>
+                        <p style="padding:0;">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal"></span>
+                        </p>
+                        <p style="padding:0px 0px 0px 25px;">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Tobacco Use:</strong> 
+                               <!--<select name="Tobacco Use" value="(#Tobacco Use#)">-->
+                               <!--     <option value="Yes">Yes</option>-->
+                               <!--     <option value="No">No</option>-->
+                               <!-- </select>-->
+                                 <input type="text" control="input " field-name="Tobacco Use" name="Tobacco Use" value="(#Tobacco Use#)">          
+                                </span>
+                        </p>
+                        <p style="padding:0;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;text-align:left">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Do you participate in any hazardous activities like skydiving, bull riding or anything like that?
+                            </span>
+                        </p>
+                        <p style="padding:0;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal"></span>
+                        </p>
+                        <p>
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Now (#Preferred Name#), most of the companies that I work with offer some really deep discounts based on how you would be able to set up your monthly premium payments. If we can get you approved for something that you are comfortable with, and that meets your needs, do you have an active checking or savings account with a bank or credit union that you can use to pay your premium each month?</span>
+                        </p>
+                        <p style="padding:0;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+                            <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal"></span>
+                        </p>
+                        <div class="notes">
+                            <p style="padding:10px 0px 10px 25px">
+                                <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-style:normal">
+                                        &nbsp;<strong>Select Account Type:</strong>
+                                        <select field-name="Account Type" name="Account Type">
+                                            <option value="(#Account Type#)" selected="" hidden="">(#Account Type#)</option>
+                                            <option value="Checking">Checking</option>
+                                            <option value="Saving">Saving</option>
+                                            <!---<option value="Direct Express">Direct Express</option>-->
+                                            <!---<option value="Credit Debit">Credit Debit</option>-->
+                                        </select>
+                                    </span>
+                            </p>
+                            <p style="padding-left:30px;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;text-align:left">
+                                <span style="font-size:12pt;color:#ff0000;font-style: italic;"><strong>NOTE:</strong> If they say they have a savings account, ask if they have used that account before for auto-drafts.</span>
+                                <span style="font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10pt;font-style:normal">&nbsp;</span>
+                            </p>
+                            <p style="padding:0;margin:0;color:#000000;font-size:11pt;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+                                <span style="font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10pt;font-style:  normal"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar_bottom">
+                    <a class="btn button submit" onclick="save();">SAVE</a>
+                    <a class="btn button asr_script" onclick="navigate('ASR_script_v4');">ASR Script</a>
+                    <a class="btn button next" onclick="next();">NEXT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+        function planSet(company) {
+
+        var plans = {
+            "Royal Neighbors of America": ["Simplified Issue Whole Life", "Graded Death Benefit"],
+            "Baltimore Life": ["Silver Guard 1", "Silver Guard 2", "Silver Guard 3"],
+            "Liberty Bankers Life": ["Preferred", "Standard", "Modified Whole Life"],
+            "American General": ["American General"],
+            "Great Western": ["Assurance Plus", "Guaranteed Assurance"],
+            "Foresters": ["PlanRight Level", "PlanRight Graded", "PlanRight Modified"],
+            "Prosperity": ["New Vista Level", "New Vista Graded", "New Vista Modified"],
+            "5Star Life": ["Terminal Illness", "Critical Illness"]
+        }
+
+        try {
+            if (plans[company].length < 0) return;
+        } catch (e) {
+            return;
+        }
+        var planValue = document.getElementById('Plan').value;
+
+
+        var selects, index;
+        selects = document.getElementsByName("Plan");
+        for (var i = 0; i < selects.length; i++) {
+            selects[i].innerHTML = "";
+            var html = "";
+            if (selects[i].className == "plan") continue;
+
+            for (var j = 0; j < plans[company].length; j++) {
+                if (j == 0 || plans[company][j] == planValue)
+                    html += "<option value='" + plans[company][j] + "' selected=''>" + plans[company][j] + "</option>";
+                else
+                    html += "<option value='" + plans[company][j] + "'>" + plans[company][j] + "</option>";
+            }
+            selects[i].innerHTML = html;
+        }
+        document.getElementById('Plan').value = selects[1].value;
+        document.getElementsByClassName('plan')[0].value = selects[1].value;
+    }
+
+    function setSoldAgents(){
+        var SoldAgentList = document.getElementById('SoldAgentList').value;
+        var agents = SoldAgentList.split(",");
+        agents.sort(); // sort agents
+        selects = document.getElementsByName('Sold Agent');
+        innerHTML = '<option value="(#Sold Agent#)" selected="" hidden="">(#Sold Agent#)</option>';
+        
+        for (i = 0 ; i < agents.length; i++){
+            innerHTML += "<option value='" + agents[i] + "'>" + agents[i] + "</option>";
+        }
+        for (i = 0; i < selects.length; i++){
+            selects[i].innerHTML = innerHTML;
+        }
+    }
+    
+    function checkStatus() {
+        var selects = document.getElementsByName('Carrier Product 2');
+        names = ['American General', 'Great Western'];
+        for (i = 0 ; i < names.length; i++)
+            if (selects[selects.length - 1].value == names[i]) return true;        
+        return false;
+    }
+    
+    function setScrolls(){
+        page = parseInt(document.getElementById('page').value);
+        scrolltop1 = document.getElementById('scroll1').value;
+        scrolltop2 = document.getElementById('scroll2').value;
+        
+        if (page == 1){
+            document.getElementsByClassName('leftSide')[0].scrollTop = scrolltop1;
+            document.getElementsByClassName('rightbody')[0].scrollTop = scrolltop2;
+        }
+        document.getElementById('page').value = 1;
+        
+        document.getElementsByClassName('leftSide')[0].addEventListener('scroll', function(){
+            scrolltop1 = this.scrollTop;
+            document.getElementById('scroll1').value = scrolltop1;
+        });
+        
+        document.getElementsByClassName('rightbody')[0].addEventListener('scroll', function(){
+            scrolltop2 = this.scrollTop;
+            document.getElementById('scroll2').value = scrolltop2;
+        });
+    }
+    
+    (function() {
+        setSoldAgents();
+        
+        var names = ['Gender', 'App Status', 'Carrier Product 2', 'Account Type', 'Plan', 'Sold Agent', 'Dental Plan', 'Dental Coverage', 'Vision Coverage'];
+        var ids = ['Gender', 'AppStatus', 'CarrierProduct2', 'AccountType', 'Plan', 'SoldAgent', 'DentalPlan', 'DentalCoverage', 'VisionCoverage'];
+
+        var inputs, index, name, notes, selects;
+        for (var i = 0; i < names.length; i++) {
+            selects = document.getElementsByName(names[i]);
+
+            var selectValue = document.getElementById(ids[i]).value;            
+            //if (names[i]=="Carrier Product 2" && selectValue == "")
+                //selectValue = "Royal Neighbors of America";
+
+            for (index = 0; index < selects.length; index++) {
+                if (selectValue !="")
+                    selects[index].value = selectValue;
+                else
+                    selects[index].selectedIndex = 0;
+            }
+            if (names[i] == "Carrier Product 2") planSet(selectValue);
+        }
+
+        inputs = document.getElementsByTagName('input');
+        for (index = 0; index < inputs.length; ++index) {
+            name = inputs[index].getAttribute("name");
+
+            inputs[index].addEventListener("input", function(e) {
+                var tag_name = e.target.getAttribute('name');
+                var value = e.target.value;
+                var tags = document.getElementsByName(tag_name);
+                for (var i = 0; i < tags.length; i++)
+                    tags[i].value = value;
+            });
+        }
+
+        notes = document.getElementsByTagName('textarea');
+        for (index = 0; index < notes.length; index++) {
+            notes[index].addEventListener('input', function(e) {
+                var tag_name = e.target.getAttribute('name');
+                var value = e.target.value;
+                var tags = document.getElementsByName(tag_name);
+                for (var i = 0; i < tags.length; i++) {
+                    tags[i].value = value;
+                }
+            });
+        }
+
+        selects = document.getElementsByTagName('select');
+        for (index = 0; index < selects.length; index++) {
+            selects[index].addEventListener('change', function(e) {
+                var tag_name = e.target.getAttribute('name');
+                var value = e.target.value;
+                var tags = document.getElementsByName(tag_name);
+                for (var i = 0; i < tags.length; i++) {
+                    tags[i].value = value;
+                }
+                if (tag_name == "Plan" || tag_name == "Carrier Product 2") {
+                    document.getElementsByName('email_selected')[0].value = document.getElementsByName('Carrier Product 2')[0].value + '_' + document.getElementsByName('Plan')[0].value;
+                }
+                if (tag_name == "Carrier Product 2") planSet(value);
+            });
+        }
+
+        for (index = 1; index <= 10; index++) {
+            if (index == 1) continue;
+            document.getElementById('step' + index).addEventListener('click', function(e) {
+                var id = e.target.id;
+                
+                if (checkStatus() && id === 'step9' || id === 'step8'){
+                    return;
+                }
+                document.getElementsByClassName(id)[0].click();
+            });
+        }
+        
+        setScrolls();
+    })();
+
+    function save() {
+        document.getElementsByClassName('submit')[0].click();
+    }
+
+    function next() {
+        document.getElementsByClassName('next')[0].click();
+    }
+    
+    function navigate(clsname) {
+        document.getElementsByClassName(clsname)[0].click();
+    }
+</script>
